@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaHub - Website Komik Terlengkap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🎨 MangaHub</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#popular">Populer</a></li>
+                    <li><a href="#categories">Kategori</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari komik...">
+                <button id="searchBtn">Cari</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Selamat Datang di MangaHub</h2>
+            <p>Tempat terbaik untuk membaca komik favorit Anda</p>
+            <button class="btn-primary">Mulai Membaca</button>
+        </div>
+    </section>
+
+    <!-- Popular Section -->
+    <section id="popular" class="popular">
+        <div class="container">
+            <h2>Komik Populer</h2>
+            <div class="comics-grid" id="populerKomik">
+                <!-- Comic cards akan di-generate dengan JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2>Kategori</h2>
+            <div class="category-filter">
+                <button class="category-btn active" data-category="semua">Semua</button>
+                <button class="category-btn" data-category="action">Action</button>
+                <button class="category-btn" data-category="romance">Romance</button>
+                <button class="category-btn" data-category="comedy">Comedy</button>
+                <button class="category-btn" data-category="horror">Horror</button>
+                <button class="category-btn" data-category="fantasy">Fantasy</button>
+            </div>
+            <div class="comics-grid" id="categoryKomik">
+                <!-- Comic cards akan di-generate dengan JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section id="featured" class="featured">
+        <div class="container">
+            <h2>Komik Terbaru</h2>
+            <div class="featured-grid" id="latestKomik">
+                <!-- Featured comics akan di-generate dengan JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang MangaHub</h2>
+            <div class="about-content">
+                <p>MangaHub adalah platform terpercaya untuk membaca komik digital dari seluruh dunia. Kami menyediakan koleksi komik terlengkap dengan berbagai genre dan bahasa.</p>
+                <div class="features">
+                    <div class="feature-item">
+                        <h3>📚 Koleksi Lengkap</h3>
+                        <p>Ribuan judul komik dari berbagai penulis terkenal</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>⚡ Cepat & Mudah</h3>
+                        <p>Akses instant ke semua komik favorit Anda</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>📱 Mobile Friendly</h3>
+                        <p>Baca komik di mana saja, kapan saja</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal untuk detail komik -->
+    <div id="comicModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="">
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p class="modal-rating"><strong>Rating:</strong> <span id="modalRating"></span>/10</p>
+                    <p class="modal-category"><strong>Kategori:</strong> <span id="modalCategory"></span></p>
+                    <p class="modal-description" id="modalDescription"></p>
+                    <p class="modal-chapters"><strong>Jumlah Chapter:</strong> <span id="modalChapters"></span></p>
+                    <button class="btn-primary">Baca Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 MangaHub. Semua hak cipta dilindungi.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+              </html>
